@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Color Palette */
+    --background: 210 25% 97%;
+    --foreground: 210 15% 15%;
+
+    --card: 210 20% 98%;
+    --card-foreground: 210 15% 15%;
+
+    --popover: 210 20% 98%;
+    --popover-foreground: 210 15% 15%;
+
+    /* Maritime Blues */
+    --primary: 210 85% 35%;
+    --primary-foreground: 210 20% 98%;
+    --sea-blue: 210 90% 45%;
+    --sea-deep: 210 95% 25%;
+    --sea-light: 210 60% 85%;
+
+    /* Warm Woods */
+    --wood-light: 30 45% 85%;
+    --wood-medium: 30 55% 65%;
+    --wood-dark: 30 65% 45%;
+    --wood-border: 30 40% 55%;
+
+    /* Goods Colors */
+    --cheese-yellow: 45 95% 60%;
+    --butter-cream: 50 60% 92%;
+    --egg-brown: 25 50% 55%;
+    --tulip-red: 355 85% 55%;
+
+    --chocolate-brown: 25 45% 40%;
+    --diamond-blue: 200 80% 65%;
+    --beer-gold: 40 85% 50%;
+    --steel-gray: 220 10% 55%;
+
+    /* Glow effects */
+    --player-a-glow: 30 100% 50%;
+    --player-b-glow: 0 100% 50%;
+
+    /* Player colors */
+    --player-a: 30 100% 50%;
+    --player-b: 0 100% 50;
+
+    --secondary: 30 45% 85%;
+    --secondary-foreground: 30 65% 25%;
+
+    --muted: 210 15% 92%;
+    --muted-foreground: 210 10% 50%;
+
+    --accent: 210 60% 85%;
+    --accent-foreground: 210 85% 35%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 95%;
+    --ring: 210 85% 35%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 25% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 210 25% 10%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 210 25% 10%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 210 85% 50%;
+    --primary-foreground: 210 25% 8%;
+    --sea-blue: 210 90% 55%;
+    --sea-deep: 210 95% 35%;
+    --sea-light: 210 60% 25%;
+
+    --wood-light: 30 25% 25%;
+    --wood-medium: 30 35% 35%;
+    --wood-dark: 30 45% 20%;
+    --wood-border: 30 30% 30%;
+
+    --cheese-yellow: 45 95% 65%;
+    --butter-cream: 50 60% 88%;
+    --egg-brown: 25 50% 60%;
+    --tulip-red: 355 85% 60%;
+
+    --chocolate-brown: 25 45% 45%;
+    --diamond-blue: 200 80% 70%;
+    --beer-gold: 40 85% 55%;
+    --steel-gray: 220 10% 60%;
+
+    --player-a-glow: 30 100% 50%;
+    --player-b-glow: 0 100% 50%;
+
+    /* Player colors - slightly lighter for dark mode */
+    --player-a: 30 100% 55%;
+    --player-b: 0 100% 55;
+
+    --secondary: 30 25% 25%;
+    --secondary-foreground: 30 45% 85%;
+
+    --muted: 210 15% 15%;
+    --muted-foreground: 210 10% 65%;
+
+    --accent: 210 60% 25%;
+    --accent-foreground: 210 85% 50%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 95%;
+
+    --border: 210 20% 20%;
+    --input: 210 20% 15%;
+    --ring: 210 85% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
